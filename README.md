@@ -17,12 +17,14 @@ Release notes/descriptions for the original project posted on the previous Aras 
 
 Release | Notes
 --------|--------
+[v2.0](https://github.com/ArasLabs/imap-email-connector/releases/tag/v2.0) | added 64Bit compatibility for Win2k8 R2 to the E-Mail Connector and checked it against Innovator 9.2
 [v1.0](https://github.com/ArasLabs/imap-email-connector/releases/tag/v1.0) | VisualStudio 2008 sample project (v1)
 
 #### Supported Aras Versions
 
 Project | Aras
 --------|------
+[v2.0](https://github.com/ArasLabs/imap-email-connector/releases/tag/v2.0) | Aras 9.2
 [v1.0](https://github.com/ArasLabs/imap-email-connector/releases/tag/v1.0) | Aras 9.1 SP5+
 
 > ###### *Please note: Aras Community Projects are provided on an "as-is" basis.*

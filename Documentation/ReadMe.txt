@@ -1,5 +1,5 @@
 DataSquare Mail2Innovator
-Version: 1.0
+Version: 1.1
 -------------------------
 
 Website: www.datasquare.de
@@ -9,7 +9,7 @@ Email-Contact: helpline@datasquare.de
 Requirements:
 .NET 3.5
 Windows XP,Server2003,Vista,7
-Aras Innovator SP6
+Aras Innovator 9.2 SP0
 
 
 Planed for the future:
