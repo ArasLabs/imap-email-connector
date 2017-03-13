@@ -1,0 +1,11 @@
+﻿<AML>
+ <Item type="Sequence" id="2C8B6D5F9ABA4947BAC4D2DE46B2EC4B" action="add">
+  <classification>/*</classification>
+  <current_value>7810</current_value>
+  <name>doc_nr</name>
+  <pad_with></pad_with>
+  <prefix></prefix>
+  <step>1</step>
+  <suffix></suffix>
+ </Item>
+</AML>

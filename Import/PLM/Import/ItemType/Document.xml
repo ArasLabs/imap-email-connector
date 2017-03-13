@@ -1,0 +1,604 @@
+﻿<AML>
+ <Item type="ItemType" id="B88C14B99EF449828C5D926E39EE8B89" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <class_structure><![CDATA[<class name="Document"><class name="Drawing"/><class name="CAD Model"/><class name="Specification"/><class name="Software"/><class name="Miscellaneous"/><class name="E-Mail"/></class>]]></class_structure>
+  <default_page_size>25</default_page_size>
+  <enforce_discovery>1</enforce_discovery>
+  <help_url xml:lang="en">mergedProjects/ProductEngineering/plm_Documents.htm</help_url>
+  <hide_where_used>0</hide_where_used>
+  <history_template keyed_name="Default" type="History Template">3BC16EF9E52B4F9792AB76BCE0492F29</history_template>
+  <implementation_type>table</implementation_type>
+  <instance_data>DOCUMENT</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>1</is_versionable>
+  <label xml:lang="en">Document</label>
+  <label_plural xml:lang="en">Documents</label_plural>
+  <large_icon>../Solutions/PLM/images/Icons/32x32/32x32_Document.gif</large_icon>
+  <manual_versioning>0</manual_versioning>
+  <name>Document</name>
+  <open_icon>../Solutions/PLM/images/Icons/16x16/16x16_Document.gif</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>0</show_parameters_tab>
+  <structure_view>tab view</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <Relationships>
+   <Item type="Allowed Permission" id="8C9D3578A5A14E67AFDA5E383DB10DCA" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="New Document" type="Permission">F0E3A6D242FC4889A9A119EEBC8EC79E</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+   </Item>
+  
+   <Item type="Can Add" id="585809AF063F4598A3B7EF30100652C1" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+   </Item>
+   <Item type="Item Action" id="9A016705A7CB48488F50B8878D57BEAD" action="add">
+    <classification>/*</classification>
+    <related_id keyed_name="DsqrEmailReply" type="Action">1CA4DAA3FA134C1B823DF145687D8AAA</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+   </Item>
+   <Item type="ItemType Life Cycle" id="44CA0422059E4A6C99BA1C57BCCE02E0" action="add">
+    <related_id keyed_name="Document" type="Life Cycle Map">3B1C099A970A4E51940CBAE76FF67A7D</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+   </Item>
+   <Item type="Property" id="8B905482951A4EB8BA3F70C1FA8309C6" action="add">
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>150</column_width>
+    <data_source keyed_name="Authoring Tools">11A953CA5A5E4BCD8EC9758C7E4B6E92</data_source>
+    <data_type>list</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Authoring Tool</label>
+    <name>authoring_tool</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>896</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="894E0A47F1BC4CA0A40C3DA13CE73EA9" action="add">
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>100</column_width>
+    <data_type>string</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Authoring Tool Version</label>
+    <name>authoring_tool_version</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>1024</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="4655EAC739744E0094364EE3B9875E4D" action="add">
+    <class_path>/Document</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>250</column_width>
+    <data_type>string</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Description</label>
+    <name>description</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>640</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>128</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="1F1141FC77064287BFF8C3E6D7CCD5A0" action="add">
+    <class_path>/Document/Drawing</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>100</column_width>
+    <data_source keyed_name="Drawing Sizes">C686BB9855A446CEBED3A7DE7850823F</data_source>
+    <data_type>list</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Drawing Size</label>
+    <name>drawing_size</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>1280</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="95631C3CD0294CB58A4454A7CB07110F" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>text</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">CC</label>
+    <name>dsqr_cc</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>4992</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="2B49F950F854436696463F035FF10069" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Date</label>
+    <name>dsqr_date</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>5120</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="EB4F5573EC064AECA5656127314F0078" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>text</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Description</label>
+    <name>dsqr_description</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>5248</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="26AF45BF3D3D4DCB9DBCD760429564F5" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="File" type="ItemType" name="File">8052A558B9084D41B9F11805E464F443</data_source>
+    <data_type>item</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">E-Mail</label>
+    <name>dsqr_html_body</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>5376</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="5B2E52BC7E24480FB83BF269D0D79A51" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="Dsqr_EmailFolder" type="ItemType" name="Dsqr_EmailFolder">18C8D02B84EE4AA29652D0139348E021</data_source>
+    <data_type>item</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">Folder</label>
+    <name>dsqr_imap_folder</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>5504</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="0D3EC57CEA3C439AA68E0DD329D2FAA9" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">dsqr_message_id</label>
+    <name>dsqr_message_id</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>5632</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>256</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="A73F452DE3CD4655B71D2BA34320D26E" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="File" type="ItemType" name="File">8052A558B9084D41B9F11805E464F443</data_source>
+    <data_type>item</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">dsqr_original_stream</label>
+    <name>dsqr_original_stream</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>5888</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="8EEDDBA9D79F4A20A68F4C2C49F57D13" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>boolean</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Reply</label>
+    <name>dsqr_reply_flag</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>6016</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="12373D1914B74DD09F703AF7A41C6CDD" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Sent by</label>
+    <name>dsqr_sent_by</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>6144</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>256</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="0C677D1D0E114409AB90BA53600C17A5" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>text</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Sent to</label>
+    <name>dsqr_sent_to</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>6272</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="DE4EDB16898F4709A1D3D0DA849900A8" action="add">
+    <class_path>/Document/E-Mail</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Subject</label>
+    <name>dsqr_subject</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>6400</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>256</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="364519C1348C4A57B88D142C3B1F538E" action="add">
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>200</column_width>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Name</label>
+    <name>name</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>64</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="03A4886FCBDA49F2B6E10E3C48326E99" action="add">
+    <class_path>/Document/Drawing</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>80</column_width>
+    <data_type>string</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Scale</label>
+    <name>scale</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>1408</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>16</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="3387411DE4434F128ADAF76E06433F54" action="add">
+    <class_path>/Document/Specification</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>120</column_width>
+    <data_source keyed_name="Specification Types">4C3C5B4E66D54BC3BEAA78ECA047EA70</data_source>
+    <data_type>list</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Specification Type</label>
+    <name>specification_type</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>1536</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Server Event" id="2646F50E02BF463C88F44A88AF7D6110" action="add">
+    <classification>/*</classification>
+    <related_id keyed_name="PE_AffectedItemFloat" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>PE_AffectedItemFloat</name>
+     </Item>
+    </related_id>
+    <server_event>onAfterVersion</server_event>
+    <sort_order>512</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+   </Item>
+   <Item type="Server Event" id="3D009AD189134208AEF665E8E0BEF33A" action="add">
+    <classification>/*</classification>
+    <related_id keyed_name="Affected Item Where Used Check" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>Affected Item Where Used Check</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeDelete</server_event>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+   </Item>
+   <Item type="TOC Access" id="84FD7C09821A401581BE13AEC072BCCC" action="add">
+    <category>Documents</category>
+    <classification>/*</classification>
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+   </Item>
+   <Item type="View" id="B0A50C5D541441028340799C03074B16" action="add">
+    <classification>/*</classification>
+    <client>js</client>
+    <related_id keyed_name="Document" type="Form">D95D1B10CE6D47CDB7AE755108DBA13D</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="View" id="15D3D0B8145C4B9DA13A2AEEBC310A37" action="add">
+    <classification>/*</classification>
+    <client>js</client>
+    <form_classification>/Document/E-Mail</form_classification>
+    <related_id keyed_name="E-Mail Document" type="Form">E11B443964FD45FE9BF7F3B98F36B3F7</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <type>default</type>
+   </Item></Relationships>
+ </Item>
+ <Item type="ItemType" id="B88C14B99EF449828C5D926E39EE8B89" action="edit">
+  <Relationships>
+   <Item type="Property" action="edit" where="source_id='B88C14B99EF449828C5D926E39EE8B89' and name='classification'">
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>120</column_width>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Type</label>
+    <name>classification</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>512</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>512</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" id="2A0700C4954641F7A36B026F9134A0EC" action="add">
+    <class_path>/Document</class_path>
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>120</column_width>
+    <data_source keyed_name="doc_nr">2C8B6D5F9ABA4947BAC4D2DE46B2EC4B</data_source>
+    <data_type>sequence</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>1</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <keyed_name_order>1</keyed_name_order>
+    <label xml:lang="en">Document Number</label>
+    <name>item_number</name>
+    <order_by>1</order_by>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='B88C14B99EF449828C5D926E39EE8B89' and name='major_rev'">
+    <classification>/*</classification>
+    <column_alignment>center</column_alignment>
+    <column_width>50</column_width>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Revision</label>
+    <name>major_rev</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>8</stored_length>
+    <track_history>0</track_history>
+    <Relationships>
+     <Item type="Grid Event" id="80BAE9AD900745A59372AB52E50A6791" action="add">
+      <classification>/*</classification>
+      <grid_event>oneditstart</grid_event>
+      <related_id keyed_name="Grid Cell ReadOnly" type="Method">
+       <Item type="Method" action="get" select="id">
+        <name>Grid Cell ReadOnly</name>
+       </Item>
+      </related_id>
+      <sort_order>128</sort_order>
+      <source_id>
+       <Item type="Property" action="get" select="id">
+        <name>major_rev</name>
+        <source_id>B88C14B99EF449828C5D926E39EE8B89</source_id>
+       </Item>
+      </source_id>
+     </Item>
+    </Relationships>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='B88C14B99EF449828C5D926E39EE8B89' and name='state'">
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <column_width>80</column_width>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">State</label>
+    <name>state</name>
+    <range_inclusive>0</range_inclusive>
+    <readonly>1</readonly>
+    <sort_order>640</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='B88C14B99EF449828C5D926E39EE8B89' and name='superseded_date'">
+    <classification>/*</classification>
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Superseded Date</label>
+    <name>superseded_date</name>
+    <pattern>short_date_time</pattern>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>4864</sort_order>
+    <source_id keyed_name="Document" type="ItemType" name="Document">B88C14B99EF449828C5D926E39EE8B89</source_id>
+    <track_history>0</track_history>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

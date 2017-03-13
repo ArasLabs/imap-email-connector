@@ -1,0 +1,4 @@
+<imports>
+  <package name="com.aras.innovator.solution.PLM" path="PLM\Import" />
+  <package name="de.dsqr.innovator.Mail2Innovator" path="Mail2Innovator\Import" />
+</imports>

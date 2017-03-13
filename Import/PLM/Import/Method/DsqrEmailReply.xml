@@ -1,0 +1,50 @@
+﻿<AML>
+ <Item type="Method" id="458B7ADCEA40478693445F6B5A1AE30B" action="add">
+  <classification>/*</classification>
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[var innovator = top.aras.newIOMInnovator();
+
+var item = innovator.getItemById(this.getAttribute("type"),this.getAttribute("id"));
+
+if(item.isError()) 
+{ 
+   top.aras.AlertError("Item not found"); 
+   return null; 
+}
+
+if(item.getProperty("classification") != "/Document/E-Mail") 
+{ 
+   top.aras.AlertError("Type is not E-Mail");
+   return null; 
+} 
+
+if(item.getLockStatus() != 2 )
+{
+   var flag = parseInt(item.getProperty("dsqr_reply_flag"));
+   if(flag === null) { return null; }
+   
+   item.setAction("edit");
+   
+   if(flag == 1)
+   {
+      item.setProperty("dsqr_reply_flag", "0");
+   }else if(flag === 0) {
+      item.setProperty("dsqr_reply_flag", "1");
+   }
+   
+   var result = item.apply();  
+   
+   if(result.isError())
+   {
+      top.aras.AlertError("Reply flag cant set");
+      return result;
+   }
+}else{
+   top.aras.AlertError("Item not locked by you");
+   return null;  
+}
+]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>DsqrEmailReply</name>
+ </Item>
+</AML>

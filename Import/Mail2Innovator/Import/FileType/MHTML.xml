@@ -1,0 +1,9 @@
+﻿<AML>
+ <Item type="FileType" id="2093033002024185A5E45AD96C5AA06E" action="add">
+  <classification>/*</classification>
+  <description>MHtml Web Page / Email</description>
+  <extension>mhtml</extension>
+  <mimetype>multipart/related</mimetype>
+  <name>MHTML</name>
+ </Item>
+</AML>
